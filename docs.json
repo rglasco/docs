@@ -22,7 +22,9 @@
           },
           {
             "group": "Quickstart",
-            "pages": []
+            "pages": [
+              "get-started/quickstart/get"
+            ]
           },
           {
             "group": "Developer Overview",
