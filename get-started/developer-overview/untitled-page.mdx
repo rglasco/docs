@@ -72,8 +72,6 @@ After your project deploys, you’ll be prompted to navigate to your HubSpot acc
 - On the project details page, click **Install now** to install the app. You’ll then be taken to the app install page.
 
   ![Image](/images/image-22.png)
-
-
 - On the app install page, click **Connect App** to install the app in your account.
 - A confirmation message will appear once the app successfully installs. You can then close the page or click **return home**.
 
@@ -81,3 +79,23 @@ At any time, you can return to the project details page either through the termi
 
 - In the terminal, run `hs project open` while in the local project directory.
 - In HubSpot, navigate to **Development** in the main navigation bar, then locate your project under _Recently updated projects_ or through the left sidebar.
+
+**2**
+
+**Start local development**
+
+With the project uploaded and installed, you can start the local development server to preview your app card.
+
+- In the terminal, navigate into your project directory, then run `hs project dev`.
+
+As of [**<u>Google Chrome version 142</u>**](https://developer.chrome.com/release-notes/142#local_network_access_restrictions), you will receive a one time time popup asking for [_app.hubspot.com_](http://app.hubspot.com) to access devices on your local network. Select **Accept** to enable local development for your apps.\
+\
+You can also manage this setting in your Chrome settings by navigating to **Settings** \> **Privacy & Security** \> [**app.hubspot.com**](http://app.hubspot.com) \> **Permissions** \> **Local network access**.
+
+- When prompted, select the account you want to test in.
+  - To test in a developer test account within your production account (recommended), select **Test on a developer test account**.
+  - Select an existing test account, or select **Test on a new developer test account**. Then, follow the prompts to install the app in the test account.
+
+For more advanced testing, you can create [**<u>configurable test accounts</u>**](https://developers.hubspot.com/docs/developer-tooling/local-development/configurable-test-accounts), which can be assigned specific combinations of HubSpot subscription tiers to ensure feature compatibility.
+
+- The local development server will then start, and the terminal will provide a link to view the local dev session in HubSpot. Follow the link to open the HubSpot local development page in your account.
