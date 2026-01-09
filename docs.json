@@ -17,14 +17,12 @@
         "tab": "Get Started",
         "groups": [
           {
-            "group": "Introduction",
-            "pages": []
-          },
-          {
-            "group": "Developer Overview",
+            "group": "Overview",
             "pages": [
+              "get-started/overview/introduction",
+              "get-started/quickstart/get",
               "get-started/developer-overview/untitled-page",
-              "get-started/quickstart/get"
+              "get-started/overview/account-types"
             ]
           }
         ]
