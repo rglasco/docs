@@ -52,14 +52,32 @@ You’ll then be greeted with a welcome message, and you can begin setting up yo
 - Following the prompts, select **App**.
 
   ![Image](/images/image-18.png)
-
-
 - Give your project a **name**.
 - Set your project’s **local directory** (by default this will be your current working directory).
 - Upload your project to HubSpot to initialize the first build and deploy.
 
   ![Image](/images/image-21.png)
-
-
 - You’ll then be prompted to install dependencies and upload your project. Installing dependencies before uploading ensures a faster build of the included app card, and makes sure that your local development environment and production match. This step will add a `package-lock.json` file and Node modules directory to the project’s `cards/` directory.
 - Then, confirm that you want to upload your project to your account.
+
+## **Install and preview your app**
+
+**1**
+
+**Install your app**
+
+After your project deploys, you’ll be prompted to navigate to your HubSpot account to walk through installing and previewing your app.
+
+- In the terminal, confirm that you want to open your account. A browser window will open the project details page in HubSpot.
+- On the project details page, click **Install now** to install the app. You’ll then be taken to the app install page.
+
+  ![Image](/images/image-22.png)
+
+
+- On the app install page, click **Connect App** to install the app in your account.
+- A confirmation message will appear once the app successfully installs. You can then close the page or click **return home**.
+
+At any time, you can return to the project details page either through the terminal or in HubSpot:
+
+- In the terminal, run `hs project open` while in the local project directory.
+- In HubSpot, navigate to **Development** in the main navigation bar, then locate your project under _Recently updated projects_ or through the left sidebar.
