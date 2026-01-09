@@ -109,16 +109,12 @@ Before you can preview the app card on the contact record, you’ll need to add 
 - On the local development page, click **Setup preview**. You’ll then be redirected to the contacts index page.
 
   ![Image](/images/image-23.png)
-
-
 - Click the **name** of a contact record.
 - At the top of the middle column of the contact record, click **Customize**.
 - Click **Default view**.
 - Select the **tab** that you want to add the card to. You can then hover over the location where you want to place the card and click the **plus button**. This can be adjusted at any time after initial setup.
 
   ![Image](/images/image-24.png)
-
-
 - In the right sidebar, click the **Card library** tab. Then, click the **Card types** dropdown menu and select **App** to filter for app cards.
 - Click **Add card** under the app card you created, then click the **close** button in the top right of the sidebar.
 - In the top right, click **Save and exit**.
@@ -126,3 +122,49 @@ Before you can preview the app card on the contact record, you’ll need to add 
   You’ll then be redirected back to the contact record, and the app card will display with a`Developing locally`tag to indicate that the local development server is waiting to detect local changes.
 
   ![Image](/images/image-25.png)
+
+You will not need to repeat the preview setup steps moving forward, unless you want to change the position of the card or customize another CRM record view.
+
+**4**
+
+**Continue local development**
+
+While the local development server runs, it will automatically pick up on any changes saved to the app card’s front-end React file. If you need to make changes to other file types, such as a `.json` configuration file, you’ll need to reupload the project and restart the local development [server.To](http://server.To) test this out, make a change to the app card’s local `.jsx` React file, then save your change. For example, change the text within one of the `Text` [**<u>components</u>**](https://developers.hubspot.com/docs/apps/developer-platform/add-features/ui-extensibility/ui-components/standard-components/text).
+
+- 
+
+  ![Image](/images/image-26.png)
+
+<frame name="frame" attributes={{  }}>
+  
+</frame>
+
+```jsx
+import React from "react";
+import { Text, Link, List } from "@hubspot/ui-extensions";
+import { hubspot } from "@hubspot/ui-extensions";
+
+hubspot.extend(() => <Extension />);
+
+const Extension = () => {
+  return (
+    <>
+      <Text>
+        Woohoo!
+      </Text>
+      <List variant="unordered-styled">
+        <Link href="https://developers.hubspot.com/docs/platform/ui-components">
+          📖 Explore our library of UI components
+        </Link>
+        <Link href="https://ecosystem.hubspot.com/marketplace/apps/app-cards">
+          📖 Look at the Marketplace collection of apps that contain app cards
+        </Link>
+        <Link href="https://developers.hubspot.com/slack">
+          ▶️ Connect with developers on #ui-extensions channel on developer
+          Slack community
+        </Link>
+      </List>
+    </>
+  );
+};
+```
