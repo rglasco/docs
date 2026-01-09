@@ -21,28 +21,16 @@
             "pages": []
           },
           {
-            "group": "Developer Overview",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
+            "group": "Quickstart",
+            "pages": []
           },
           {
-            "group": "Quickstart",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
+            "group": "Developer Overview",
+            "pages": []
           },
           {
             "group": "Account Types",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
+            "pages": []
           }
         ]
       },
