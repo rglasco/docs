@@ -99,3 +99,30 @@ You can also manage this setting in your Chrome settings by navigating to **Sett
 For more advanced testing, you can create [**<u>configurable test accounts</u>**](https://developers.hubspot.com/docs/developer-tooling/local-development/configurable-test-accounts), which can be assigned specific combinations of HubSpot subscription tiers to ensure feature compatibility.
 
 - The local development server will then start, and the terminal will provide a link to view the local dev session in HubSpot. Follow the link to open the HubSpot local development page in your account.
+
+**3**
+
+**Setup local development preview**
+
+Before you can preview the app card on the contact record, you’ll need to add your new card to the contact record view.
+
+- On the local development page, click **Setup preview**. You’ll then be redirected to the contacts index page.
+
+  ![Image](/images/image-23.png)
+
+
+- Click the **name** of a contact record.
+- At the top of the middle column of the contact record, click **Customize**.
+- Click **Default view**.
+- Select the **tab** that you want to add the card to. You can then hover over the location where you want to place the card and click the **plus button**. This can be adjusted at any time after initial setup.
+
+  ![Image](/images/image-24.png)
+
+
+- In the right sidebar, click the **Card library** tab. Then, click the **Card types** dropdown menu and select **App** to filter for app cards.
+- Click **Add card** under the app card you created, then click the **close** button in the top right of the sidebar.
+- In the top right, click **Save and exit**.
+
+  You’ll then be redirected back to the contact record, and the app card will display with a`Developing locally`tag to indicate that the local development server is waiting to detect local changes.
+
+  ![Image](/images/image-25.png)
