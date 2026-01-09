@@ -21,18 +21,11 @@
             "pages": []
           },
           {
-            "group": "Quickstart",
+            "group": "Developer Overview",
             "pages": [
+              "get-started/developer-overview/untitled-page",
               "get-started/quickstart/get"
             ]
-          },
-          {
-            "group": "Developer Overview",
-            "pages": []
-          },
-          {
-            "group": "Account Types",
-            "pages": []
           }
         ]
       },
